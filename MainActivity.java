@@ -99,7 +99,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 flag = 1;
                 text1 = et_show.getText().toString();//得到前面输入的那个数
                 et_show.setText("");//setText()  把以前的内容冲掉了，
-               // append()在以前的内容后面添加
+                // append()在以前的内容后面添加怎么这么麻烦  真实的
                 break;
             case R.id.less:
                 flag = 2;
@@ -182,6 +182,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             default:
                 break;
+
+        }
+    }
+    public void feature1(View v) {
+        if ( bt_1.getText().toString().equals("功能1")) {
+            bt_1.setText(R.string.app_name);
+        } else {
+            bt_1.setText(R.string.app_name);
         }
     }
 }
